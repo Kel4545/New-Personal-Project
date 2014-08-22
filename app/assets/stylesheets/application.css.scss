@@ -1,0 +1,190 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require bootstrap_and_overrides
+ */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+
+body {
+  background: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000;
+}
+
+html {
+  height: 100%;
+}
+
+a {
+  color: mediumpurple;
+}
+
+a:hover {
+  outline: none;
+  text-decoration: none;
+  color: purple;
+}
+
+a.focus {
+  outline: none;
+  outline-offset: 0;
+}
+
+a {
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  color: #686868;
+}
+
+h2 {
+  font-size: 24px;
+  color: #686868;
+}
+
+h3 {
+
+  font-size: 18px;
+
+}
+
+.overflow {
+
+  overflow: hidden;
+
+}
+
+.social-icons ul li {
+
+  padding: 0 10px;
+
+}
+
+.social-icons ul li:last-child {
+
+  padding-right: 0;
+
+}
+
+.social-icons ul li a {
+
+  font-size: 18px;
+  color: #d3d3d3;
+  padding: 0;
+
+}
+
+.social-icons ul li a:hover,
+.social-icons ul li a:focus {
+
+  color: purple;
+  background: none;
+
+}
+
+#header {
+  margin-bottom: 0;
+  padding: 30px 0 60px 0;
+}
+
+#header .navbar-inverse .container {
+  position: relative;
+}
+
+#header .navbar {
+
+  background: #fff;
+
+  border: 0;
+
+  margin-bottom: 0;
+
+}
+
+#header .navbar-toggle {
+
+  margin-top: 20px;
+
+}
+
+#header .navbar-brand {
+
+  padding: 0;
+
+  margin-left: 0;
+
+}
+
+#header .navbar-brand h1 {
+
+  padding: 0;
+
+  margin: 0;
+
+}
+
+#header .navbar-nav.navbar-right > li:last-child {
+
+  margin-right: 20px;
+
+}
+
+#header .navbar-nav.navbar-right > li a {
+
+  color: #000;
+
+  font-size: 12px;
+
+  padding: 20px;
+
+  text-transform: uppercase;
+
+  font-weight: 300;
+
+}
+
+#header .navbar-inverse .navbar-nav li.active > a,
+#header .navbar-inverse .navbar-nav li.active > a:focus,
+#header .navbar-nav.navbar-right li > a:hover,
+.navbar-inverse .navbar-nav > .open > a {
+
+  background-color: inherit;
+  border: 0;
+  color: mediumpurple;
+
+}
+
+#header .navbar-inverse .navbar-nav li a:hover {
+  color: mediumpurple;
+
+}
