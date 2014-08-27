@@ -1,6 +1,9 @@
 class RegistrationsController < ApplicationController
 
-  skip_before_filter :ensure_authenticated_user
+  # skip_before_filter :ensure_authenticated_user
+def show
+  @user = User.new
+end
 
   def new
     @user = User.new
